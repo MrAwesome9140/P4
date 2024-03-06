@@ -39,7 +39,7 @@ function App() {
     <div className="P4 container">
       <CitiesBar cities={cities} currentCity={currentCity} setCurCity={setCurCity}/>
       <Search cities={cities} setCities={setCities} setCurCity={setCurCity} errorAlert={errorAlert}/>
-      {/* <Weather/> */}
+      <Weather currentCity={currentCity}/>
     </div>
   );
 }

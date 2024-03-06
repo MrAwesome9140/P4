@@ -76,3 +76,19 @@ html, body, #root, .App {
   margin-bottom: 6px;
   font-size: 25px;
 }
+
+.weather {
+  margin-left: 6%;
+  margin-top: 13%;
+}
+
+.weather-header {
+  margin-bottom: 4%;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.weather-item {
+  margin-bottom: 4%;
+  font-size: 20px;
+}
