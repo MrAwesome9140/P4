@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const weather_url = "https://api.open-meteo.com/v1/forecast?";
 const temp_units = "fahrenheit";
 const forecast_days = 2;
-const hourly = "temperature_2m";
+const hourly = "apparent_temperature";
 
 async function getWeather(city) {
   const params = new URLSearchParams({
@@ -15,6 +15,8 @@ async function getWeather(city) {
   });
 
   const search_url = weather_url + params.toString();
+
+  console.log(search_url);
 
   try {
     const response = await fetch(search_url);
@@ -33,7 +35,7 @@ const Weather = ({ currentCity }) => {
   useEffect(() => {
     const fetchData = async () => {
       var weather = await getWeather(currentCity);
-      setTemps(weather.temperature_2m);
+      setTemps(weather.apparent_temperature);
     };
     fetchData();
   }, [currentCity]);
