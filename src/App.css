@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+html, body, #root, .App {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row>* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.cities-row {
+  margin-top: 7%;
+  height: 5%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+.cities-row::-webkit-scrollbar {
+  display: none;
+}
+
+.city-button {
+  width: fit-content;
+  padding-left: 3%;
+  padding-right: 3%;
+  height: 100%;
+  margin-left: 3%;
+  margin-right: 2%;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.selected-city {
+  background-color: rgb(190, 188, 188);
+}
+
+.search {
+  height: 4%;
+  margin-top: 8%;
+  margin-bottom: 5%;
+  margin-left: 3%;
+  display: flex;
+}
+
+.search-box {
+  border-width: 2px;
+  width: 55%;
+}
+
+.search-button {
+  width: 10%;
+  margin-left: 3%;
+  border-radius: 5px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-button>div {
+  margin-bottom: 6px;
+  font-size: 25px;
 }
