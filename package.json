@@ -1,6 +1,7 @@
 {
   "name": "p4",
   "version": "0.1.0",
+  "homepage": "https://mrawesome9140.github.io/P4",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
